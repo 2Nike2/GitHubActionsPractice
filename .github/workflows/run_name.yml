@@ -1,4 +1,4 @@
-name: Run game
+name: Run name
 run-name: Run by @${{ github.actor }}
 on: push
 jobs:
