@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   lint:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: action/checkout@4
