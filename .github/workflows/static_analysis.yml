@@ -5,9 +5,9 @@ on:
 defaults:
   run:
     shell: bash
-    concurrency:
-      group: $${{ guthub.workflow }}- ${{ github.ref }}
-      cancel-in-progress: true
+concurrency:
+  group: $${{ guthub.workflow }}- ${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   lint:
     run-on: ubuntu-latest
