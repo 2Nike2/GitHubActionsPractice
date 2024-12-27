@@ -8,6 +8,7 @@ jobs:
       pull-requests: write
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_ACTOR: ${{ github.actor }}
     steps:
       - run: echo "GitHub Actor: ${{ GITHUB_ACTOR }}"
       - run: echo "Pull Request Head Ref: ${{ GITHUB_HEAD_REF }}"
