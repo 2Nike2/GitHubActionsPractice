@@ -9,7 +9,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - run: echo "GitHub Actor: ${{ github.actor }}"
-      - run: echo "Pull Request Head Ref: ${{ github.event.pull_request.head.ref }}"
+      - run: echo "GitHub Actor: ${{ GITHUB_ACTOR }}"
+      - run: echo "Pull Request Head Ref: ${{ GITHUB_HEAD_REF }}"
       - uses: actions/checkout@v4
       - run: gh pr merge "${GITHUB_HEAD_REF}" --merge --auto
