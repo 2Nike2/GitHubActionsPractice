@@ -16,4 +16,4 @@ jobs:
     steps:
       - run: echo "Result> ${MESSAGE}"
         env:
-          MESSAGE ${{ needs.call.outputs.message }}
+          MESSAGE: ${{ needs.call.outputs.message }}
