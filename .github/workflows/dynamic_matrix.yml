@@ -17,4 +17,4 @@ jobs:
       matrix: ${{ fromJSON(needs.prepare.outputs.matrix-json) }}
     runs-on: ubuntu-latest
     steps:
-      run: echo "${RUNNER_OS}"
+      - run: echo "${RUNNER_OS}"
